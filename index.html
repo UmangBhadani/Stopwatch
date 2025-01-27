@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stopwatch</title>
+</head>
+<body>
+   <div class="outer-box">
+    <h1>Stopwatch</h1>
+    <div class="main-div">
+        <div class="rotating-pointer">
+            <img id="clock-circle" src="images/Clock.png" alt="">
+            <div id="circle-pointer"></div>
+        </div>
+        <div id="display">00:00:00:00</div>
+        <div class="lap-div">
+            <div class="lap-result">
+                <ul id="lap-ul"></ul>
+            </div>
+            <div class="lap-diff">
+                <ul id="diff-ul"></ul>
+            </div>
+        </div>
+        <div class="btns">
+            <button onclick="preventintervals()" id="start">Start</button>
+            <button onclick="pausefunction()" id="pause">Pause</button>
+            <button onclick="lapfunction()" id="lap">Lap</button>
+            <button onclick="resetfunction()" id="reset">Reset</button>
+            </div>
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
